@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MilitaryMart – E-Commerce Portal</title>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: white;
+  }
+
+  header {
+    background-color: #1b262c;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #32cd32;
+  }
+
+  header h1 {
+    color: #32cd32;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #32cd32;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background-color: #1f2833;
+    border: 2px solid #32cd32;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  form {
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  input, textarea, button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  input, textarea {
+    background-color: #0b0c10;
+    color: white;
+  }
+
+  button {
+    background-color: #32cd32;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #28a428;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1b262c;
+    border-top: 2px solid #32cd32;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MilitaryMart</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<section id="home" class="container">
+  <h2>Welcome to MilitaryMart</h2>
+  <p>Your trusted E-Commerce portal for Military Weapons, Vehicles & Tactical Gear.</p>
+</section>
+
+<section id="products" class="container">
+  <h2>Our Featured Products</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://www.thedrive.com/uploads/2022/10/09/ABRAMS-MBT-General-Dynamics.jpg?auto=webp">
+      <h3>M1A2 Abrams Tank</h3>
+      <p>Powerful battle tank used in modern warfare.</p>
+      <button>Add to Wishlist</button>
+    </div>
+
+    <div class="card">
+      <img src="data:image/webp;base64,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">
+      <h3>F-22 Raptor Jet</h3>
+      <p>Advanced stealth fighter aircraft.</p>
+      <button>Add to Wishlist</button>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.FPmQcNEIE9-ibxpnFHZpBQHaE8?w=236&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1">
+      <h3>MQ-9 Reaper Drone</h3>
+      <p>Unmanned aerial vehicle for reconnaissance.</p>
+      <button>Add to Wishlist</button>
+    </div>
+  </div>
+</section>
+
+<section id="register" class="container">
+  <h2>User Registration</h2>
+  <form id="registerForm">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password (min 6 chars)" required>
+    <button type="submit">Register</button>
+  </form>
+</section>
+
+<section id="login" class="container">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="email" id="loginEmail" placeholder="Email" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+</section>
+
+<section id="about" class="container">
+  <h2>About Us</h2>
+  <p>MilitaryMart is dedicated to bringing authentic and high-quality military-grade weapons and defense tools to authorized buyers.</p>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<div class="footer">
+  <p>© 2025 MilitaryMart | All Rights Reserved | Customer Care: support@militarymart.com</p>
+</div>
+
+<script>
+  // Registration Validation
+  document.getElementById("registerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (password.length < 6) {
+      alert("Password must be at least 6 characters!");
+      return;
+    }
+
+    alert(`Registration successful! Welcome, ${username}!`);
+    this.reset();
+  });
+
+  // Login Validation
+  document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    if (email === "" || password === "") {
+      alert("Please fill in all fields!");
+      return;
+    }
+
+    alert("Login successful!");
+    this.reset();
+  });
+
+  // Contact Form
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Your message has been sent to MilitaryMart support!");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
